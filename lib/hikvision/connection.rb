@@ -9,7 +9,7 @@ class Hikvision
       @cookies = ''
 
       @faraday = Faraday.new do |faraday|
-        faraday.response :xml,  content_type: /\bxml$/
+        faraday.response :xml, content_type: /\bxml$/
         faraday.response :raise_error
 
         faraday.adapter :excon
